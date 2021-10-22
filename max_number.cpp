@@ -2,7 +2,7 @@
 //
 // Created by: Rodas Nega
 // Created on: Oct 2021
-// This program uses an array to calculate the mean
+// This program uses an array to find the largest number
 //   from randomly generated numbers
 
 
@@ -14,8 +14,10 @@
 
 template<size_t N>
 int LargestValue(std::array<int, N> listOfRandomNumbers) {
+    // this function finds the largest value
     int maxValue;
 
+    // process
     maxValue = listOfRandomNumbers[0];
     for (int xValue = 1; xValue < N; xValue++) {
         if (listOfRandomNumbers[xValue] > maxValue) {
@@ -29,7 +31,7 @@ int LargestValue(std::array<int, N> listOfRandomNumbers) {
 
 main() {
     // this function uses an array to generate 10 random numbers
-    //  from 1-100 and output the mean
+    //  from 1-100 and outputs the list
 
     std::array<int, 10> randomNumbers;
     int numberInArray;
